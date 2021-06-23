@@ -1,103 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="import" href="modal.html">
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <h1>HENDLEX</h1>
-      <p>нано технології водовідштовхування</p>
+
+    <header class="flex flex-space-between">
+      <div>
+        <div class="flex-space-between">
+          <h1 onclick="location.href='index.html';">HENDLEX</h1>
+          <div>
+            <p>нано технології водовідштовхування</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navbar flex flex-vertical-bottom">
+        <ul>
+          <li class="navitem">
+            <a href="/">Головна</a>
+          </li>
+          <li class="navitem">
+            <a href="/">Категорії</a>
+          </li>
+          <li class="navitem">
+            <a href="/">Контакти</a>
+          </li>
+        </ul>
+
+      </div>
+      <script>
+
+//http://www.webmasters.by/articles/html-coding/3288-html5-imports.html
+
+var doc = document.querySelector('link[rel="import"]').import;
+// Grab DOM from doc.html's document.
+var text = doc.querySelector('.doc');
+document.body.appendChild(text.cloneNode(true));
+      </script>
+      <div class="flex flex-vertical-bottom  flex-horizontal-left">
+        <button id="myBtn" class="btn bg-default"><i class="fa fa-cart-plus" style="font-size:1.5em;color:white;"><span
+              style="padding-left: 8px;">4</span></i>
+
+        </button>
+      </div>
     </header>
 
+
+
     <main class="main clearfix">
-      <h2>Для автомобілів</h2>
+      <h2>Відштовхувач подвійний</h2>
 
       <div class="row">
 
-        <div class="column-3">
-          <div class="media" onclick="location.href='push.html';">
-            <div class="card">
-              <div class="container">
-                <img class="media-image" src="img/5.jpg" style="width:100%">
-                <button class="button">Редагувати</button>
+        <div class="row">
+          <div class="column-12">
+            <div class="topnav">
+              <div class="column-6 text-left">
+                <h2>Для автомобілів</h2>
+              </div>
+              <div class="column-6 text-right">
+                <button class="btn bg-default" onclick="location.href='createCard.html';"> Додати позицію</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column-12">
+            <div class="flex flex-vertical-bottom  flex-horizontal-center">
+              <div class="column-5">
+
+                <div class="price-controls">
+                  <label for="country">Фільтрувати по ціні</label>
+                  від<input class="min-price" type="text" value="5 000">
+                  до <input class="max-price" type="text" value="15 000">
+                </div>
+
               </div>
 
-              <h3>Відштовхувач подвійний</h3>
-
-              <p>Відштовхувач не потребує підігріву кузова. Легке нанесення</p>
-
-              <p class="price">3200 грн.</p>
-              <p class="">#7985454</p>
-              <p class="status"><span class="promo product-view-description__status">В наявності</span>
-                Доступно: <span class="promo">4</span></p>
-
-              <button>До Ордеру</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="column-3">
-          <div class="media">
-            <div class="card">             
-              <div class="container">
-                <img class="media-image" src="img/6.jpg" style="width:100%">
-                <button class="button">Переглянути</button>
+              <div class="column-3">
+                <div class="price-controls">
+                  <select id="price" name="price">
+                    <option value="australia">від найменшої</option>
+                    <option value="canada">від найбільшої</option>
+                  </select>
+                </div>
               </div>
-              <h3>Відштовхувач однокомпонентний</h3>
 
-              <p>Однокомпонентний відштовхувач. Має над міцний клас стійкості,
-                але потребує попередньої обробки Корзиметром</p>
+              <div class="column-4">
+                <div class="search" action="">
+                  <input type="text" placeholder="Шукати.." name="search2">
+                </div>
 
-              <p class="price">3200 грн.</p>
-              <p class="">#7345654</p>
-              <p class="status"><span class="promo product-view-description__status">В наявності</span>
-                Доступно: <span class="promo">2</span></p>
-
-              <button>До Ордеру</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="column-3">
-          <div class="media">
-            <div class="card">
-              <img class="media-image" src="img/7.jpg" style="width:100%">
-              <h3>Корзиметр</h3>
 
-              <p>Корзиметр використовується для обробки кузову автомобіля
-                від бруду перед нанесенням відштовхувачів</p>
+        <div class="row">
+          <ul class="list">
 
-              <p class="price">3200 грн.</p>
-              <p class="">#79897454</p>
-              <p class="status"><span class="promo not product-view-description__status">Немає в наявності</span>
-                Доступно: <span class="promo">0</span></p>
+            <li class="list-item">
 
-              <button>До Ордеру</button>
-            </div>
-          </div>
+              <div class="list-content">
+                <div class="container">
+                  <img class="media-image" src="img/5.jpg" style="width:100%">
+                  <button class="button" onclick="location.href='push.html';">Редагувати</button>
+                </div>
+
+                <h3>Відштовхувач подвійний</h3>
+
+                <p>Відштовхувач не потребує підігріву кузова. Легке нанесення</p>
+
+                <p class="price">3200 грн.</p>
+                <p class="">#7985454</p>
+                <p class="status"><span class="promo product-view-description__status">В наявності</span>
+                  Доступно: <span class="promo">4</span></p>
+
+                <button>До Ордеру</button>
+              </div>
+            </li>
+
+
+            <li class="list-item">
+
+              <div class="list-content">
+                <div class="container">
+                  <img class="media-image" src="img/6.jpg" style="width:100%">
+                  <button class="button">Редагувати</button>
+                </div>
+
+                <h3>Відштовхувач однокомпонентний</h3>
+
+                <p>Однокомпонентний відштовхувач. Має над міцний клас стійкості</p>
+                <p class="price">3200 грн.</p>
+                <p class="">#7985454</p>
+                <p class="status"><span class="promo product-view-description__status">В наявності</span>
+                  Доступно: <span class="promo">4</span></p>
+
+                <button>До Ордеру</button>
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="list-content">
+                <div class="container">
+                  <img class="media-image" src="img/8.jpg" style="width:100%">
+                  <button class="button">Редагувати</button>
+                </div>
+                <h3>Корзиметр</h3>
+                <p>Корзиметр використовується для обробки кузову автомобіля
+                  від бруду перед нанесенням відштовхувачів</p>
+                <p class="price">3200 грн.</p>
+                <p class="">#7985454</p>
+                <p class="status"><span class="promo product-view-description__status">В наявності</span>
+                  Доступно: <span class="promo">4</span></p>
+
+                <button>До Ордеру</button>
+              </div>
+            </li>
+
+          </ul>
         </div>
-
-        <div class="column-3">
-          <div class="media">
-            <div class="card">
-              <img class="media-image" src="img/8.jpg" style="width:100%">
-              <h3>Відштовхувач подвійний</h3>
-
-              <p>Відштовхувач не потребує підігріву кузова. Легке нанесення. Швидка обробка. Найкраща ціна Довготривалий
-                ефект</p>
-
-              <p class="price">3200 грн.</p>
-              <p>#79823</p>
-              <p class="status"><span class="promo product-view-description__status">В наявності</span>
-                Доступно: <span class="promo">4</span></p>
-
-              <button>До Ордеру</button>
-            </div>
-          </div>
-        </div>
-
         <div class="row">
           <div class="column-12">
             <div class="media">
@@ -108,9 +180,14 @@
           </div>
         </div>
 
-
-      </div>
-
     </main>
   </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <footer>
+      <script src="js/lib.js"></script>
+    </footer>
 </body>
+
+</html>

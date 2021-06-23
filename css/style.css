@@ -78,7 +78,21 @@ header {
   border-radius: 0.5em;
   margin-bottom: 1.5em;
 }
+.navbar {
+  width: 100%;
+}
 
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 3px 5px;
+}
 .main {
   padding: 0 1.5em 1.5em;
   background-color: #fff;
@@ -118,19 +132,49 @@ header {
 .clearfix::after {
   clear: both;
 }
-
-.card-link {
-  cursor: pointer;
+/*card GOODS Flex items*/
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px; /* Ограничение ширины */
-  margin: auto;
-  text-align: center;
-  font-family: sans-serif;
+.list {
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.list-item {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+}
+.list-item:hover {
+  box-shadow: 0 10px 30px #000;
+  z-index: 2;
+}
+.list-item:hover:after {
+  transform: scale(1.1);
+}
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+.list-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+.list-content p {
+  flex: 1 0 auto;
+}
 .price {
   color: #d32f2f;
   font-size: 18px;
@@ -141,7 +185,7 @@ header {
   margin: 0, 4px;
 }
 
-.card button {
+.list-item button {
   border: none;
   outline: 0;
   padding: 10px;
@@ -157,7 +201,7 @@ header {
   position: relative;
   width: 100%;
 }
-.container .button{
+.container .button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,22 +233,18 @@ header {
   background: #ccc;
   padding: 3px;
 }
-
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
+/*------------------*/
+/* Add a black background color to the top navigation */
+.topnav {
+  margin-top: 1em;
+  overflow: hidden;
 }
 
 /* Full-width input fields */
-input[type="text"],
-input[type="number"],
-select,
-textarea {
+.form-card input[type="text"],
+.form-card input[type="number"],
+.form-card select,
+.form-card textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -213,14 +253,13 @@ textarea {
   background: #f1f1f1;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-select:focus,
-textarea:focus {
+.form-card input[type="text"]:focus,
+.form-card input[type="number"]:focus,
+.form-card select:focus,
+.form-card textarea:focus {
   background-color: #ddd;
   outline: none;
 }
-
 
 /* On mouse-over */
 .btn {
@@ -251,10 +290,48 @@ textarea:focus {
 .default {
   color: black;
 }
+
+/*****/
+
+.bg-success {
+  background-color: #4caf50;
+} /* Green */
+.bg-success:hover {
+  background-color: #46a049;
+}
+
+.bg-info {
+  background-color: #2196f3;
+} /* Blue */
+.bg-info:hover {
+  background: #0b7dda;
+}
+
+.bg-warning {
+  background-color: #ff9800;
+} /* Orange */
+.bg .warning:hover {
+  background: #e68a00;
+}
+
+.bg .danger {
+  background-color: #f44336;
+} /* Red */
+.bg .danger:hover {
+  background: #da190b;
+}
+
+.bg-default {
+  background-color: #a79d9d;
+  color: black;
+} /* Gray */
+.bg-default:hover {
+  background: #ddd;
+}
 /**/
 .img-push img {
   border: 1px solid #ddd; /* Gray border */
-  border-radius: 4px;  /* Rounded border */
+  border-radius: 4px; /* Rounded border */
   padding: 5px; /* Some padding */
   width: 150px; /* Set a small width */
 }
@@ -263,3 +340,143 @@ textarea:focus {
 .img-push img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
+/*ФОРМА ПОШУКУ*/
+
+.min-toggle {
+  left: 70px;
+}
+.max-toggle {
+  left: 165px;
+}
+.price-controls input {
+  width: 80px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  border: none;
+  background: #34495e;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  text-align: center;
+  color: #283136;
+  border-radius: 5px;
+  color: white;
+}
+.price-controls input:first-child {
+  margin-right: 14px;
+}
+
+.price-controls select {
+  padding: 8px 10px;
+  border: none;
+  background: #34495e;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  text-align: center;
+  color: #283136;
+  border-radius: 5px;
+  color: white;
+}
+
+.search input {
+  min-width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background: #34495e;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  text-align: center;
+  color: #283136;
+  border-radius: 5px;
+  color: white;
+}
+.search ::placeholder {
+  color: white;
+  font-size: 1em;
+}
+/*------------------*/
+/* The Modal (background) */
+.modal {
+  margin-top: 0;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*FLEX*/
+
+.flex {
+  display: flex;
+}
+
+.flex-horizontal-center {
+  justify-content: center;
+}
+
+.flex-horizontal-left {
+  justify-content: start;
+}
+.flex-horizontal-right {
+  justify-content: end;
+}
+
+.flex-vertical-center {
+  align-items: center;
+}
+
+.flex-vertical-top {
+  align-items: flex-start;
+}
+.flex-vertical-bottom {
+  align-items: flex-end;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+/*///////////*/
