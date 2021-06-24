@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="import" href="modal.html"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex flex-space-between">
+            <div>
+                <div class="flex-space-between">
+                    <h1 onclick="location.href='index.html';">HENDLEX</h1>
+                    <div>
+                        <p>нано технології водовідштовхування</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar flex flex-vertical-bottom">
+                <ul>
+                    <li class="navitem">
+                        <a href="/">Головна</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/">Категорії</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="flex flex-vertical-bottom  flex-horizontal-left">
+                <button id="myBtn" class="btn bg-default"><i class="fa fa-cart-plus"
+                        style="font-size:1.5em;color:white;"><span style="padding-left: 8px;">4</span></i>
+                </button>
+            </div>
+        </header>
+
+
+        <main class="main clearfix">
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li>
+                        <a href="/">
+                            <img src="images/home.svg" class="nav-links__icon" />
+                            <span class="nav-links__label">Головна</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='replacement.html';">
+                        <a href="#">
+                            <img src="images/calendar.svg" class="nav-links__icon" />
+                            <span class="nav-links__label">Замовлення</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='register_replacement.html';">
+                        <a href="#">
+                            <i class="fa fa-cart-plus nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Журнал замовлень на відпуск</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/members">
+                            <img src="images/members.svg" class="nav-links__icon" />
+                            <span class="nav-links__label">Дилери</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <img src="images/star.svg" class="nav-links__icon" />
+                            <span class="nav-links__label">Переглянути</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="row">
+                    <div class="column-12">
+
+                        <div class="column-6 text-left">
+                            <h2>Журнал замовлень на відпуск</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-12">
+                        <div>
+                            <select class="search-filter" id="status" name="status">
+                                <option value="australia">Усе</option>
+                                <option value="australia">Виконано</option>
+                                <option value="canada">На виконанні</option>
+                                <option value="canada">Не підтверджено</option>
+                            </select>
+                            <input class="search-replacement" type="text" name="search" placeholder="Search..">
+
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th>№</th>
+                                <th>ID замовлення</th>
+                                <th>Дата формування</th>
+                                <th>Загальна сума</th>
+                                <th>Сума знижки</th>
+                                <th>Сума з урахуванням знижки</th>
+                                <th>Експрес накладна</th>
+                                <th>Статус</th>
+                                <th>Документи</th>
+                                <th>
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>46581255</td>
+                                <td>24.06.21</td>
+                                <td>10200
+                                </td>
+                                <td>600</td>
+                                <td>9600</td>
+                                <td></td>
+                                <td>Не підтверджено</td>
+                                <td><img src="images/invoice.svg" width="30" /></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>46581255</td>
+                                <td>23.05.21</td>
+                                <td>10200
+                                </td>
+                                <td>600</td>
+                                <td>9600</td>
+                                <td>7898789454</td>
+                                <td>у дорозі</td>
+                                <td><img src="images/pdf.svg" width="30" /></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>46581255</td>
+                                <td>21.06.21</td>
+                                <td>10200
+                                </td>
+                                <td>600</td>
+                                <td>9600</td>
+                                <td>4298789454</td>
+                                <td>очікує у відділенні</td>
+                                <td><img src="images/pdf.svg" width="30" /></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>46581255</td>
+                                <td>21.03.21</td>
+                                <td>10200
+                                </td>
+                                <td>600</td>
+                                <td>9600</td>
+                                <td>4598789454</td>
+                                <td>Виконано</td>
+                                <td><img src="images/pdf.svg" width="30" /></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>46581255</td>
+                                <td>21.02.21</td>
+                                <td>10200
+                                </td>
+                                <td>600</td>
+                                <td>9600</td>
+                                <td>5898789454</td>
+                                <td>Виконано</td>
+                                <td><img src="images/pdf.svg" width="30" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-12">
+                        <div class="media">
+                            <p class="text-center">
+                                Завантажити ще...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Ордер</h1>
+            <table>
+                <tr>
+                    <th>№</th>
+                    <th>Назва</th>
+                    <th>Ціна</th>
+                    <th>Кількість</th>
+                    <th>Сума</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Відштовхувач подвійний</td>
+                    <td>3200</td>
+                    <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
+                            placeholder="3">
+                    </td>
+                    <td>10200</td>
+                    <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Корзиметр</td>
+                    <td>3200</td>
+                    <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
+                            placeholder="1">
+                    </td>
+                    <td>3200</td>
+                    <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Відштовхувач однокомпонентний</td>
+                    <td>3200</td>
+                    <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
+                            placeholder="1">
+                    </td>
+                    <td>3200</td>
+                    <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Відро для замішування</td>
+                    <td>200</td>
+                    <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
+                            placeholder="1">
+                    </td>
+                    <td>200</td>
+                    <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+                </tr>
+
+            </table>
+            <div class="order">
+                <p>Загальна сума замовлення 36 600 грн.</p>
+                <p>Знижка 3 020 грн.</p>
+                <p>Сума із застосуванням знижки 26 540 грн.</p>
+            </div>
+            <div>
+                <button class="btn bg-default">Оформити</button> <button class="btn bg-danger">Очистити</button>
+                <button class="btn bg-success">Зберегти</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal"></div>
+
+    <footer>
+
+        <script src="js/lib.js"></script>
+        <div>
+            <a href="https://www.w3schools.com/w3css/w3css_icons.asp">w3css-icons</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/justify-content">MDN-flex</a>
+            <a href="https://html5css.ru/howto/howto_css_animated_search.php">html5css</a>
+        </div>
+    </footer>
+</body>
+
+</html>

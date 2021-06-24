@@ -1,4 +1,12 @@
 
+<script>
+    //http://www.webmasters.by/articles/html-coding/3288-html5-imports.html
+    var doc = document.querySelector('link[rel="import"]');
+    // Grab DOM from doc.html's document.
+    var text = doc.querySelector('.doc');
+    document.body.appendChild(text.cloneNode(true));
+  </script>
+  
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <!-- Modal content -->

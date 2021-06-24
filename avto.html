@@ -4,12 +4,11 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="import" href="modal.html">
+  <!-- <link rel="import" href="modal.html"> -->
 </head>
 
 <body>
   <div class="container">
-
     <header class="flex flex-space-between">
       <div>
         <div class="flex-space-between">
@@ -18,9 +17,7 @@
             <p>нано технології водовідштовхування</p>
           </div>
         </div>
-
       </div>
-
       <div class="navbar flex flex-vertical-bottom">
         <ul>
           <li class="navitem">
@@ -33,42 +30,59 @@
             <a href="/">Контакти</a>
           </li>
         </ul>
-
       </div>
-      <script>
 
-//http://www.webmasters.by/articles/html-coding/3288-html5-imports.html
 
-var doc = document.querySelector('link[rel="import"]').import;
-// Grab DOM from doc.html's document.
-var text = doc.querySelector('.doc');
-document.body.appendChild(text.cloneNode(true));
-      </script>
+
       <div class="flex flex-vertical-bottom  flex-horizontal-left">
         <button id="myBtn" class="btn bg-default"><i class="fa fa-cart-plus" style="font-size:1.5em;color:white;"><span
               style="padding-left: 8px;">4</span></i>
-
         </button>
       </div>
     </header>
 
 
-
     <main class="main clearfix">
-      <h2>Відштовхувач подвійний</h2>
-
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li>
+            <a href="/">
+              <img src="images/home.svg" class="nav-links__icon" />
+              <span class="nav-links__label">Головна</span>
+            </a>
+          </li>
+          <li onclick="location.href='replacement.html';">
+            <a href="#">
+              <img src="images/calendar.svg" class="nav-links__icon" />
+              <span class="nav-links__label">Замовлення</span>
+            </a>
+          </li>
+          <li>
+            <a href="/members">
+              <img src="images/members.svg" class="nav-links__icon" />
+              <span class="nav-links__label">Дилери</span>
+            </a>
+          </li>
+          <li>
+            <a href="/about">
+              <img src="images/star.svg" class="nav-links__icon" />
+              <span class="nav-links__label">Переглянути</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div class="row">
-
         <div class="row">
           <div class="column-12">
-            <div class="topnav">
-              <div class="column-6 text-left">
-                <h2>Для автомобілів</h2>
-              </div>
-              <div class="column-6 text-right">
-                <button class="btn bg-default" onclick="location.href='createCard.html';"> Додати позицію</button>
-              </div>
+
+            <div class="column-6 text-left">
+              <h2>Для автомобілів</h2>
             </div>
+            <div class="column-6 text-right">
+              <button style="margin-top: 1em;" class="btn bg-default" onclick="location.href='createCard.html';"> Додати
+                позицію</button>
+            </div>
+
           </div>
         </div>
 
@@ -167,7 +181,6 @@ document.body.appendChild(text.cloneNode(true));
                 <button>До Ордеру</button>
               </div>
             </li>
-
           </ul>
         </div>
         <div class="row">
@@ -182,10 +195,79 @@ document.body.appendChild(text.cloneNode(true));
 
     </main>
   </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1>Ордер</h1>
+      <table>
+        <tr>
+          <th>№</th>
+          <th>Назва</th>
+          <th>Ціна</th>
+          <th>Кількість</th>
+          <th>Сума</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Відштовхувач подвійний</td>
+          <td>3200</td>
+          <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number" placeholder="3">
+          </td>
+          <td>10200</td>
+          <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Корзиметр</td>
+          <td>3200</td>
+          <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number" placeholder="1">
+          </td>
+          <td>3200</td>
+          <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Відштовхувач однокомпонентний</td>
+          <td>3200</td>
+          <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number" placeholder="1">
+          </td>
+          <td>3200</td>
+          <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Відро для замішування</td>
+          <td>200</td>
+          <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number" placeholder="1">
+          </td>
+          <td>200</td>
+          <td><i class="fa fa-trash" style="font-size:1.5em;color:red"></i></td>
+        </tr>
+
+      </table>
+      <div class="order">
+        <p>Загальна сума замовлення 36 600 грн.</p>
+        <p>Знижка 3 020 грн.</p>
+        <p>Сума із застосуванням знижки 26 540 грн.</p>
+      </div>
+      <div>
+        <button class="btn bg-default">Оформити</button> <button class="btn bg-danger">Очистити</button>
+        <button class="btn bg-success">Зберегти</button>
+      </div>
+
+
+
+    </div>
+  </div>
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
+
+
     <footer>
+
       <script src="js/lib.js"></script>
     </footer>
 </body>
