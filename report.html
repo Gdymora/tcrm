@@ -32,17 +32,23 @@
                 </ul>
             </div>
             <div style="width: 30em;" class="flex flex-vertical-bottom  flex-horizontal-left">
-                Пакувати: 1
+                Замовлень на оприходуванні: 1
             </div>
         </header>
 
 
         <main class="main clearfix">
+            <div style="padding-left: 1em;position: fixed;
+    left: 0;
+    top: 8.25rem;" id="hider"><i class="fa fa-bars" style="font-size:1.8em;color:white;"></i>
+            </div>
             <nav class="main-nav">
+
+
                 <ul class="nav-links">
                     <li>
                         <a href="/">
-                            <img src="images/home.svg" class="nav-links__icon" />
+                            <img src="images/home.svg" class="nav-links__icon hov" />
                             <span class="nav-links__label">Головна</span>
                         </a>
                     </li>
@@ -89,13 +95,15 @@
                         </a>
                     </li>
                 </ul>
+
             </nav>
+
             <div class="row">
                 <div class="row">
                     <div class="column-12">
 
                         <div class="column-6 text-left">
-                            <h2>Журнал відвантажень</h2>
+                            <h2>Звіти</h2>
                         </div>
 
                     </div>
@@ -103,76 +111,51 @@
 
                 <div class="row">
                     <div class="column-12">
-                        <div>
-                            <select class="search-filter" id="status" name="status">
-                                <option value="australia">Усе</option>
-                                <option value="canada">Обробити</option>
-                                <option value="canada">На виконанні</option>
-                                <option value="australia">Виконано</option>
-                                <option value="australia">Скасовано</option>
-                            </select>
-                            <input class="search-replacement" type="text" name="search" placeholder="Search..">
+                        <!-- Tab links -->
+
+                        <div class="tab flex flex-horizontal-center">
+                            <button class="tablinks" onclick="openTab(event, 'traffic')">Рух товарів</button>
+                            <button class="tablinks" onclick="openTab(event, 'channels')">Реалізовані товари за каналами
+                                збуту</button>
+                            <button class="tablinks" onclick="openTab(event, 'assortment')">Реалізація за товарним
+                                асортиментом</button>
+                            <button class="tablinks" onclick="openTab(event, 'loss')">Фактичні втрати товарів</button>
+                            <button class="tablinks" onclick="openTab(event, 'representatives')">Діяльність торгових
+                                представників</button>
+                            <button class="tablinks" onclick="openTab(event, 'discounts')">Отримані та надані
+                                знижки</button>
+
 
                         </div>
 
-                        <table style="font-size: 0.8em;">
-                            <tr>
-                                <th>№</th>
-                                <th>ID замовлення</th>
-                                <th>Дата формування</th>
-                                <th>Регіон Дилера</th>
-                                <th>ПІБ Дилера</th>
-                                <th>Загальна сума</th>
-                                <th>Сума знижки</th>
-                                <th>Сума з урахуванням знижки</th>
-                                <th>Пакувальник</th>
-                                <th>Дата відвантаження</th>
-                                <th>Статус</th>
-                                <th>Документи</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>46581255</td>
-                                <td>24.06.21</td>
-                                <td>Чернівці</td>
-                                <td>Шевченко Н.П</td>
-                                <td>9 600</td>
-                                <td>600</td>
-                                <td>9 000</td>
-                                <td></td>
-                                <td></td>
-                                <td><button id="myBtn" style="padding: 4px; " class="btn bg-info">Пакувати</button></td>
-                                <td><img src="images/invoice.svg" width="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>46581255</td>
-                                <td>24.06.21</td>
-                                <td>Вінниця</td>
-                                <td>Галушко Т.Б</td>
-                                <td>19 600</td>
-                                <td>1 900</td>
-                                <td>18 6000</td>
-                                <td>Корольов М.П.</td>
-                                <td>24.06.21</td>
-                                <td>На виконанні (ttn 23829848)</td>
-                                <td><img src="images/pdf.svg" width="30" /></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>46581255</td>
-                                <td>24.06.21</td>
-                                <td>Вінниця</td>
-                                <td>Галушко Т.Б</td>
-                                <td>19 600</td>
-                                <td>1 900</td>
-                                <td>18 6000</td>
-                                <td>Корольов М.П.</td>
-                                <td>24.06.21</td>
-                                <td>На виконанні (у відділенні ttn 23829848)</td>
-                                <td><img src="images/pdf.svg" width="30" /></td>
-                            </tr>
-                        </table>
+                        <!-- Tab content -->
+                        <div id="traffic" class="tabcontent">
+                            <h3>Рух товарів</h3>
+                            <p>London is the capital city of England.</p>
+                        </div>
+
+                        <div id="channels" class="tabcontent">
+                            <h3>Реалізовані товари за каналами збуту</h3>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+
+                        <div id="assortment" class="tabcontent">
+                            <h3>Реалізація за товарним асортиментом</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                        <div id="loss" class="tabcontent">
+                            <h3>Фактичні втрати товарів</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                        <div id="representatives" class="tabcontent">
+                            <h3>Діяльність торгових представників</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                        <div id="discounts" class="tabcontent">
+                            <h3>Отримані та надані знижки</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="row">
@@ -202,8 +185,8 @@
                         <th>SKU</th>
                         <th>Назва</th>
                         <th>Ціна</th>
-                        <th>Кіл-ть</th>
-                        <th>На складі</th>
+                        <th>Кіл-ть (факт)</th>
+                        <th>В накладній</th>
                         <th>Сума</th>
                     </tr>
                     <tr>
@@ -212,9 +195,9 @@
                         <td>Відштовхувач подвійний</td>
                         <td>3200</td>
                         <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
-                                placeholder="3">
+                                placeholder="2">
                         </td>
-                        <td>12</td>
+                        <td>3</td>
                         <td>9600</td>
                     </tr>
 
@@ -226,7 +209,7 @@
                         <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
                                 placeholder="1">
                         </td>
-                        <td>7</td>
+                        <td>1</td>
                         <td>3200</td>
                     </tr>
                     <tr>
@@ -237,7 +220,7 @@
                         <td><input class="text-center" style="width: 4em; border:none; font-size: 1em;" type="number"
                                 placeholder="1">
                         </td>
-                        <td>20</td>
+                        <td>1</td>
                         <td>200</td>
                     </tr>
 
@@ -246,11 +229,12 @@
                     <p>Загальна сума замовлення 36 600 грн.</p>
                     <p>Знижка 3 020 грн.</p>
                     <p>Сума із застосуванням знижки 26 540 грн.</p>
+                    <p>Експрес накладна Нової Пошти 7988765444</p>
                 </div>
 
                 <div>
-                    <button class="btn bg-default">Роздрукувати супровідні документи</button>
-                    <button class="btn bg-success">Замовлення відвантажено</button>
+                    <button class="btn bg-default">Роздрукувати Акт повернення</button>
+                    <button class="btn bg-success">Замовлення оприходувано</button>
                 </div>
 
             </div>
