@@ -114,7 +114,8 @@
                         <!-- Tab links -->
 
                         <div class="tab flex flex-horizontal-center">
-                            <button class="tablinks" onclick="openTab(event, 'traffic')">Рух товарів</button>
+                            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'traffic')">Рух
+                                товарів</button>
                             <button class="tablinks" onclick="openTab(event, 'channels')">Реалізовані товари за каналами
                                 збуту</button>
                             <button class="tablinks" onclick="openTab(event, 'assortment')">Реалізація за товарним
@@ -122,51 +123,297 @@
                             <button class="tablinks" onclick="openTab(event, 'loss')">Фактичні втрати товарів</button>
                             <button class="tablinks" onclick="openTab(event, 'representatives')">Діяльність торгових
                                 представників</button>
-                            <button class="tablinks" onclick="openTab(event, 'discounts')">Отримані та надані
-                                знижки</button>
-
 
                         </div>
 
                         <!-- Tab content -->
                         <div id="traffic" class="tabcontent">
                             <h3>Рух товарів</h3>
-                            <p>London is the capital city of England.</p>
+                            <div>
+                                з <input class="search-replacement" type="date"> по <input class="search-replacement"
+                                    type="date" type="text">
+                                <input class="search-replacement" type="text" name="search" placeholder="Search..">
+
+                            </div>
+
+                            <table style="font-size: 0.8em;">
+                                <tr>
+                                    <th>№</th>
+                                    <th>SKU</th>
+                                    <th>Дата продажу</th>
+                                    <th>Назва товару</th>
+                                    <th>Ціна</th>
+                                    <th>Кількість</th>
+                                    <th>Сума</th>
+                                    <th>ПІБ Продавця</th>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>25.06.21</td>
+                                    <td>Відштовхувач подвійний</td>
+                                    <td>600</td>
+                                    <td>6</td>
+                                    <td>3 600</td>
+                                    <td>Геращенко А.Т.</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>24.06.21</td>
+                                    <td>Відро для змішування</td>
+                                    <td>160</td>
+                                    <td>2</td>
+                                    <td>320</td>
+                                    <td>Геращенко А.Т.</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>23.06.21</td>
+                                    <td>Корзиметр</td>
+                                    <td>1600</td>
+                                    <td>2</td>
+                                    <td>3200</td>
+                                    <td>Геращенко А.Т.</td>
+                                </tr>
+                            </table>
+                            <h2>Разом 7 120 грн</h2>
                         </div>
+
 
                         <div id="channels" class="tabcontent">
                             <h3>Реалізовані товари за каналами збуту</h3>
-                            <p>Paris is the capital of France.</p>
+
+                            <div>
+                                <select class="search-filter" id="status" name="status">
+                                    <option value="australia">Усі</option>
+                                    <option value="australia">Інтернет магазин</option>
+                                    <option value="canada">Дилери</option>
+                                    <option value="canada">Магазин Стальского</option>
+                                    <option value="canada">Магазин Авторинок</option>
+                                </select>
+                                з <input class="search-replacement" type="date"> по <input class="search-replacement"
+                                    type="date" type="text">
+                                <input class="search-replacement" type="text" name="search" placeholder="Search..">
+
+                            </div>
+
+                            <table style="font-size: 0.8em;">
+                                <tr>
+                                    <th>№</th>
+                                    <th>SKU</th>
+                                    <th>Дата продажу</th>
+                                    <th>Назва товару</th>
+                                    <th>Ціна</th>
+                                    <th>Кількість</th>
+                                    <th>Сума</th>
+                                    <th>ПІБ Продавця</th>
+                                    <th>Канал</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>25.06.21</td>
+                                    <td>Відштовхувач подвійний</td>
+                                    <td>600</td>
+                                    <td>6</td>
+                                    <td>3 600</td>
+                                    <td>Геращенко А.Т.</td>
+                                    <td>Інтернет магазин</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>24.06.21</td>
+                                    <td>Відро для змішування</td>
+                                    <td>160</td>
+                                    <td>2</td>
+                                    <td>320</td>
+                                    <td>Геращенко А.Т.</td>
+                                    <td>Дил-р Пухнаський Д.В.</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>23.06.21</td>
+                                    <td>Корзиметр</td>
+                                    <td>1600</td>
+                                    <td>2</td>
+                                    <td>3200</td>
+                                    <td>Бахмут А.Т.</td>
+                                    <td>Авторинок</td>
+                                </tr>
+                            </table>
+                            <h2>Разом 7 120 грн</h2>
                         </div>
 
                         <div id="assortment" class="tabcontent">
                             <h3>Реалізація за товарним асортиментом</h3>
-                            <p>Tokyo is the capital of Japan.</p>
+                            <div>
+                                з <input class="search-replacement" type="date"> по <input class="search-replacement"
+                                    type="date" type="text">
+                                <input class="search-replacement" type="text" name="search" placeholder="Search..">
+
+                            </div>
+
+                            <table style="font-size: 0.8em;">
+                                <tr>
+                                    <th>№</th>
+                                    <th>Артикул</th>
+                                    <th>Дата</th>
+                                    <th>Категорія</th>
+                                    <th>Сума</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>25.06.21</td>
+                                    <td>Для автомобілів</td>
+                                    <td>3 600</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>134687</td>
+                                    <td>25.06.21</td>
+                                    <td>Для дому</td>
+                                    <td>3 600</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>134687</td>
+                                    <td>24.06.21</td>
+                                    <td>Для взуття</td>
+                                    <td>3 800</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>134687</td>
+                                    <td>24.06.21</td>
+                                    <td>Для автомобілів</td>
+                                    <td>3 600</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>134687</td>
+                                    <td>24.06.21</td>
+                                    <td>Для дому</td>
+                                    <td>3 600</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>134687</td>
+                                    <td>23.06.21</td>
+                                    <td>Для взуття</td>
+                                    <td>3 800</td>
+                                </tr>
+                            </table>
+                            <h2>Разом 17 120 грн</h2>
                         </div>
                         <div id="loss" class="tabcontent">
                             <h3>Фактичні втрати товарів</h3>
-                            <p>Tokyo is the capital of Japan.</p>
+                            <div>
+                                з <input class="search-replacement" type="date"> по <input class="search-replacement"
+                                    type="date" type="text">
+                                <input class="search-replacement" type="text" name="search" placeholder="Search..">
+
+                            </div>
+
+                            <table style="font-size: 0.8em;">
+                                <tr>
+                                    <th>№</th>
+                                    <th>Артикул</th>
+                                    <th>SKU</th>
+                                    <th>Дата</th>
+                                    <th>Назва</th>
+                                    <th>Сума</th>
+                                    <th>Від-ий за списання</th>
+                                    <th>Примітка</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>134687</td>
+                                    <td>7987987</td>
+                                    <td>13.02.21</td>
+                                    <td>Щітка</td>
+                                    <td>30</td>
+                                    <td>Черниш О.В.</td>
+                                    <td>Заміна по гарантії</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>757627</td>
+                                    <td>978488</td>
+                                    <td>12.01.21</td>
+                                    <td>Грунтовка</td>
+                                    <td>300</td>
+                                    <td>Черниш О.В.</td>
+                                    <td>Розбилась на складі</td>
+                                </tr>
+                            </table>
+                            <h2>Разом 330 грн</h2>
                         </div>
                         <div id="representatives" class="tabcontent">
                             <h3>Діяльність торгових представників</h3>
-                            <p>Tokyo is the capital of Japan.</p>
-                        </div>
-                        <div id="discounts" class="tabcontent">
-                            <h3>Отримані та надані знижки</h3>
-                            <p>Tokyo is the capital of Japan.</p>
-                        </div>
+                            <div>
+                                <input class="search-replacement" type="text" name="search" placeholder="Search..">
+                                <button classs="btn bg-default">Додати +</button>
 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column-12">
-                        <div class="media">
-                            <p class="text-center">
-                                Завантажити ще...
-                            </p>
+                            </div>
+
+                            <table style="font-size: 0.8em;">
+                                <tr>
+                                    <th>№</th>
+                                    <th>ПІБ</th>
+                                    <th>Регіон</th>
+                                    <th>Телефон</th>
+                                    <th>email</th>
+                                    <th>ЄДРПОУ</th>
+                                    <th>Редагувати</th>
+                                    <th>Контактна особа</th>
+                                    <th>Інфо для відправки</th>
+                                    <th>Статус</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Жданцев Б.Г.</td>
+                                    <td>Київ (СТО на Дарниці)</td>
+                                    <td>067 456-12-34</td>
+                                    <td>ref@yyr.com</td>
+                                    <td>4564111548</td>
+                                    <td><button>Редагувати</button></td>
+                                    <td>Жданцев Б.Г.</td>
+                                    <td>105 відділення</td>
+                                    <td>Активний</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Гурьев А.Г.</td>
+                                    <td>Вишгород</td>
+                                    <td>067 456-12-34</td>
+                                    <td>ref@yyr.com</td>
+                                    <td>4564111548</td>
+                                    <td><button>Редагувати</button></td>
+                                    <td>Гурьев А.Г.</td>
+                                    <td>39відділення</td>
+                                    <td>Заблоковано</td>
+                                </tr>
+
+                            </table>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="column-12">
+                    <div class="media">
+                        <p class="text-center">
+                            Завантажити ще...
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </main>
     </div>
@@ -247,7 +494,13 @@
 
     <footer>
 
+
         <script src="js/lib.js"></script>
+
+        <script>
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
         <div>
             <a href="https://www.w3schools.com/w3css/w3css_icons.asp">w3css-icons</a>
             <a href="https://developer.mozilla.org/ru/docs/Web/CSS/justify-content">MDN-flex</a>
