@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="import" href="modal.html"> -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="flex flex-space-between">
+            <div>
+                <div class="flex-space-between">
+                    <h1 onclick="location.href='index.html';">HENDLEX</h1>
+                    <div>
+                        <p>нано технології водовідштовхування</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar flex flex-vertical-bottom">
+                <ul>
+                    <li class="navitem">
+                        <a href="/">Головна</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/">Категорії</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+        <main class="main clearfix">
+            <div style="padding-left: 1em;position: fixed;
+    left: 0;
+    top: 8.25rem;" id="hider"><i class="fa fa-bars" style="font-size:1.8em;color:white;"></i>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li>
+                        <a href="/">
+                            <img src="images/home.svg" class="nav-links__icon hov" />
+                            <span class="nav-links__label">Головна</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='replacement.html';">
+                        <a href="#">
+                            <img src="images/calendar.svg" class="nav-links__icon" />
+                            <span class="nav-links__label">Замовлення</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='register_replacement.html';">
+                        <a href="#">
+                            <i class="fa fa-building-o  nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Журнал замовлень</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='shipment_schedule.html';">
+                        <a href="#">
+                            <i class="fa fa-automobile nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Журнал відвантажень</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='turnover_invoices.html';">
+                        <a href="#">
+                            <i class="fa fa-file-code-o nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Накладні на повернення</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='report.html';">
+                        <a href="#">
+                            <i class="fa fa-file-archive-o nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Звіти</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='settings.html';">
+                        <a href="#">
+                            <i class="fa fa-gear nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Налаштування</span>
+                        </a>
+                    </li>
+                    <li onclick="location.href='access_control.html';">
+                        <a href="#">
+                            <i class="fa fa-expeditedssl nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Керування доступом</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="row">
+                <div class="row">
+                    <div class="column-12">
+
+                        <div class="column-6 text-left">
+                            <h2>Звіти</h2>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-12">
+                        <!-- Tab links -->
+
+                        <div class="tab flex flex-horizontal-center">
+                            <button id="defaultOpen" class="tablinks"
+                                onclick="openTab(event, 'sales_invoice')">Видаткова</button>
+                            <button id="defaultOpen" class="tablinks"
+                                onclick="openTab(event, 'invoice')">Рахунок</button>
+                            <button class="tablinks" onclick="openTab(event, 'details')">Реквізити</button>
+                            <button class="tablinks" onclick="openTab(event, 'const')">Константи</button>
+                        </div>
+
+                        <!-- Tab content -->
+
+                        <div id="sales_invoice" class="tabcontent">
+                        </div>
+
+                        <!-- Tab content -->
+
+                        <div id="invoice" class="tabcontent">
+                        </div>
+                        <!-- Tab content -->
+
+                        <div id="details" class="tabcontent">
+                        </div>
+                        <!-- Tab content -->
+
+                        <div id="const" class="tabcontent">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-12">
+                    <div class="media">
+                        <p class="text-center">
+                            Завантажити ще...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div style="margin-top: 0.2em;font-size: 0.8em;">
+                <h1>Картка Дилера ID-4 </h1>
+                <h3>Жданцев Б.Г. Київ (СТО на Дарниці)</h3>
+                <form class="form-card" action="">
+                    <hr>
+                    <label for=""><b>ПІБ</b></label>
+                    <input type="text" placeholder="Жданцев Б.Г." required>
+
+                    <label for=""><b>Регіон</b></label>
+                    <input type="text" placeholder="Київ (СТО на Дарниці)" required>
+
+                    <label for=""><b>Телефон</b></label>
+                    <input type="text" placeholder="067 456-12-34" required>
+
+                    <label for=""><b>email</b></label>
+                    <input type="text" placeholder="ref@yyr.com" required>
+
+                    <label for=""><b>ЄДРПОУ/ІНН</b></label>
+                    <input type="number" placeholder="4564111548" required>
+
+                    <label for=""><b>Торгова знижка</b></label>
+                    <select>
+                        <option value="australia">10</option>
+                        <option value="canada">20</option>
+                    </select>
+
+                    <label for=""><b>Контактна особа</b></label>
+                    <input type="text" placeholder="Жданцев Б.Г." required>
+
+                    <label for=""><b>Інфо для відправки</b></label>
+                    <input type="text" placeholder="105 відділення" required>
+                    <label for="status">Умови оплати</label>
+                    <select>
+                        <option value="australia">Передплати</option>
+                        <option value="canada">Післяоплата</option>
+                        <option value="canada">Кредит</option>
+                    </select>
+                    <label for="status">Статус</label>
+                    <select>
+                        <option value="australia">Активний</option>
+                        <option value="canada">Заблоковано</option>
+                    </select>
+                    <hr>
+
+                    <button type="submit" class="btn success">Зберегти</button>
+                    <button type="reset" class="btn default">Скинути</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal"></div>
+
+    <footer>
+
+
+        <script src="js/lib.js"></script>
+
+        <script>
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+        <div>
+            <a href="https://www.w3schools.com/w3css/w3css_icons.asp">w3css-icons</a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS/justify-content">MDN-flex</a>
+            <a href="https://html5css.ru/howto/howto_css_animated_search.php">html5css</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -38,11 +38,15 @@
 
 
         <main class="main clearfix">
+            <div style="padding-left: 1em;position: fixed;
+            left: 0;
+            top: 8.25rem;" id="hider"><i class="fa fa-bars" style="font-size:1.8em;color:white;"></i>
+            </div>
             <nav class="main-nav">
                 <ul class="nav-links">
                     <li>
                         <a href="/">
-                            <img src="images/home.svg" class="nav-links__icon" />
+                            <img src="images/home.svg" class="nav-links__icon hov" />
                             <span class="nav-links__label">Головна</span>
                         </a>
                     </li>
@@ -60,13 +64,13 @@
                     </li>
                     <li onclick="location.href='shipment_schedule.html';">
                         <a href="#">
-                            <i class="fa fa-building-o  nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <i class="fa fa-automobile nav-links__icon" style="font-size:1.8em;color:white;"></i>
                             <span class="nav-links__label">Журнал відвантажень</span>
                         </a>
                     </li>
                     <li onclick="location.href='turnover_invoices.html';">
                         <a href="#">
-                            <i class="fa fa-automobile nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <i class="fa fa-file-code-o nav-links__icon" style="font-size:1.8em;color:white;"></i>
                             <span class="nav-links__label">Накладні на повернення</span>
                         </a>
                     </li>
@@ -76,16 +80,16 @@
                             <span class="nav-links__label">Звіти</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="/members">
-                            <img src="images/members.svg" class="nav-links__icon" />
-                            <span class="nav-links__label">Дилери</span>
+                    <li onclick="location.href='settings.html';">
+                        <a href="#">
+                            <i class="fa fa-gear nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Налаштування</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="/about">
-                            <img src="images/star.svg" class="nav-links__icon" />
-                            <span class="nav-links__label">Переглянути</span>
+                    <li onclick="location.href='access_control.html';">
+                        <a href="#">
+                            <i class="fa fa-expeditedssl nav-links__icon" style="font-size:1.8em;color:white;"></i>
+                            <span class="nav-links__label">Керування доступом</span>
                         </a>
                     </li>
                 </ul>

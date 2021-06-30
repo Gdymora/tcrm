@@ -1,6 +1,8 @@
 <!doctype html>
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
@@ -9,20 +11,32 @@
     <header>
       <h1>HENDLEX</h1>
       <p>нано технології водовідштовхування</p>
-    </header>
+    </header>I
 
     <main class="main clearfix">
-      <h2>Перелік категорій</h2>
+      <div class="row">
+        <div class="column-12">
+          <div class="column-6 text-left">
+            <h2>Перелік категорій</h2>
+          </div>
+          <div class="column-6 text-right">
+            <button style="margin-top: 1em;" class="btn bg-default" onclick="location.href='createCard.html';"> Додати
+              категорію</button>
+          </div>
+
+        </div>
+      </div>
 
       <div class="row">
         <div class="column-6">
 
-          <div class="media card-link" onclick="location.href='avto.html';">
+          <div class="media card-link">
             <!-- <a href="avto.html" class="card-link"></a> -->
-            <img class="media-image" src="img/1.jpeg" width="80">
+            <img onclick="location.href='avto.html';" class="media-image" src="img/1.jpeg" width="80">
             <div class="media-body">
-              <h4>Для автомобілів</h4>
-              <p>
+              <h4>Для автомобілів <i id="myBtn" class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
+              <p onclick="location.href='avto.html';">
                 В розділі машинні масла.
               </p>
             </div>
@@ -33,7 +47,8 @@
           <div class="media">
             <img class="media-image" src="img/2.jpeg" width="80">
             <div class="media-body">
-              <h4>Для дому</h4>
+              <h4>Для дому <i id="myBtn" class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -47,7 +62,8 @@
           <div class="media">
             <img class="media-image" src="img/3.jpeg" width="80">
             <div class="media-body">
-              <h4>Для одягу</h4>
+              <h4>Для одягу <i id="myBtn" class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -59,7 +75,8 @@
           <div class="media">
             <img class="media-image" src="img/1.jpeg" width="80">
             <div class="media-body">
-              <h4>Для взуття</h4>
+              <h4>Для взуття <i id="myBtn" class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -75,9 +92,9 @@
             <!-- <a href="avto.html" class="card-link"></a> -->
             <img class="media-image" src="img/1.jpeg" width="80">
             <div class="media-body">
-              <h4>Для автомобілів</h4>
-              <p>
-                В розділі машинні масла.
+              <h4 style="display:inline">Для автомобілів <i class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
+              <p> В розділі машинні масла.
               </p>
             </div>
           </div>
@@ -87,7 +104,8 @@
           <div class="media">
             <img class="media-image" src="img/2.jpeg" width="80">
             <div class="media-body">
-              <h4>Для дому</h4>
+              <h4>Для дому <i class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -101,7 +119,8 @@
           <div class="media">
             <img class="media-image" src="img/3.jpeg" width="80">
             <div class="media-body">
-              <h4>Для одягу</h4>
+              <h4>Для одягу <i class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -113,7 +132,8 @@
           <div class="media">
             <img class="media-image" src="img/1.jpeg" width="80">
             <div class="media-body">
-              <h4>Для взуття</h4>
+              <h4>Для взуття <i class="fa fa-external-link"
+                  style="font-size:1.5em;color:rgb(114, 109, 109); float: right;"></i></h4>
               <p>
                 Товари для чистки взуття.
               </p>
@@ -132,5 +152,45 @@
         </div>
       </div>
     </main>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div style="margin-top: 0.2em;font-size: 0.8em;">
+          <h1>Редагування категорії</h1>
+          <form class="form-card" action="">
+            <hr>
+            <label for=""><b>Назва категорії</b></label>
+            <input type="text" placeholder="Для автомобілів" required>
+
+
+            <label for=""><b>Опис категорії</b></label>
+            <input type="text" placeholder="Товари для очищення автомобілів" required>
+            <label for=""><b>Статус категорії</b></label>
+            <select class="search-filter" id="status" name="status">
+              <option value="australia">Активно</option>
+              <option value="australia">Не активно</option>
+            </select>
+            <img onclick="location.href='avto.html';" class="media-image" src="img/1.jpeg" width="80">
+
+            <button type="submit" class="btn info">Завантажити зображення</button>
+
+            <hr>
+
+            <button type="submit" class="btn success">Зберегти</button>
+            <button type="reset" class="btn default">Скинути</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal"></div>
   </div>
+
+
+  <script src="js/lib.js"></script>
 </body>
