@@ -1,0 +1,765 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+    .ritz .waffle a {
+        color: inherit;
+    }
+
+    .ritz .waffle .s2 {
+        background-color: #ffffff;
+        text-align: left;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s3 {
+        background-color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 14pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s7 {
+        border-left: none;
+        border-bottom: 1px SOLID #000000;
+        background-color: #a5a5a5;
+        text-align: center;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s14 {
+        background-color: #ffffff;
+        text-align: center;
+        color: #0000ff;
+        font-family: 'docs-Calibri', Arial;
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s8 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: right;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s1 {
+        background-color: #ffffff;
+        text-align: left;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s10 {
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: right;
+        font-weight: bold;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s13 {
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s9 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: left;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s0 {
+        background-color: #ffffff;
+        text-align: right;
+        font-weight: bold;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s4 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: left;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s5 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #a5a5a5;
+        text-align: center;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s6 {
+        border-right: none;
+        border-bottom: 1px SOLID #000000;
+        background-color: #a5a5a5;
+        text-align: center;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s12 {
+        background-color: #ffffff;
+        text-align: right;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ritz .waffle .s11 {
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        color: #000000;
+        font-family: 'Arial';
+        font-size: 11pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .border {
+        border-bottom: 1px SOLID #000000;
+    }
+</style>
+<div class="ritz grid-container" dir="ltr">
+    <table class="waffle" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th class="row-header freezebar-origin-ltr"></th>
+                <th id="76577476C0" style="width:32px;" class="column-headers-background"></th>
+                <th id="76577476C1" style="width:77px;" class="column-headers-background"></th>
+                <th id="76577476C2" style="width:162px;" class="column-headers-background"></th>
+                <th id="76577476C3" style="width:60px;" class="column-headers-background"></th>
+                <th id="76577476C4" style="width:63px;" class="column-headers-background"></th>
+                <th id="76577476C5" style="width:87px;" class="column-headers-background"></th>
+                <th id="76577476C6" style="width:124px;" class="column-headers-background"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 18px">
+                <th id="76577476R0" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s0" colspan="2">Постачальник</td>
+                <td class="s1 border" colspan="5" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R1" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">ЄДРПОУ</td>
+                <td class="s1 border" colspan="5" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R2" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">Р/р</td>
+                <td class="s1 border" colspan="5" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R3" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">в</td>
+                <td class="s1 border" colspan="3" onclick="create(this)"> </td>
+                <td class="s1" style="text-align: center;">МФО</td>
+                <td class="s1 border" colspan="4" onclick="create(this)"> </td>
+            </tr>
+
+            <tr style="height: 18px">
+                <th id="76577476R4" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">ІПН</td>
+                <td class="s1 border" colspan="1" onclick="create(this)"> </td>
+                <td class="s1">Свідоцтво</td>
+                <td class="s1 border" colspan="4" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R5" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">Адреса</td>
+                <td class="s1 border" colspan="5" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R6" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1"></td>
+                <td class="s1 border" colspan="7" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R6" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1">тел.</td>
+                <td class="s1 border" colspan="2" onclick="create(this)"> </td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R7" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1"></td>
+                <td class="s1"></td>
+                <td class="s1" colspan="4"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R8" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s0" colspan="2">Одержувач</td>
+                <td class="s1" colspan="5">_______________________________________________________________________</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R9" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s1"></td>
+                <td class="s1"></td>
+                <td class="s1"></td>
+                <td class="s1" colspan="4"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R10" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s0" colspan="2">Платник</td>
+                <td class="s1" colspan="5">_______________________________________________________________________</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R11" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2" colspan="4"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R12" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s0" colspan="2">Замовлення</td>
+                <td class="s1" colspan="5">_______________________________________________________________________</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R13" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s0" colspan="2">Умова продажу</td>
+                <td class="s1" colspan="5">_______________________________________________________________________</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R14" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 23px">
+                <th id="76577476R15" style="height: 23px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 23px"></div>
+                </th>
+                <td class="s3" colspan="7">Рахунок-фактура №_________</td>
+            </tr>
+            <tr style="height: 23px">
+                <th id="76577476R16" style="height: 23px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 23px"></div>
+                </th>
+                <td class="s3" colspan="7">від &quot;_____&quot;_______________20_____р.</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R17" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s4"></td>
+                <td class="s4"></td>
+                <td class="s4"></td>
+                <td class="s4"></td>
+                <td class="s4"></td>
+                <td class="s4"></td>
+                <td class="s4"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R18" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s5">№</td>
+                <td class="s5" colspan="2">Найменування</td>
+                <td class="s5">Од. вим.</td>
+                <td class="s6">Кількість</td>
+                <td class="s7 softmerge">
+                    <div class="softmerge-inner" style="width:86px;left:-3px">Ціна без ПДВ</div>
+                </td>
+                <td class="s5">Сума без ПДВ</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R19" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">1</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R20" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">2</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R21" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">3</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R22" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">4</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R23" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">5</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R24" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">6</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R25" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">7</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R26" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">8</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R27" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">9</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R28" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">10</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R29" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">11</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R30" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">12</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R31" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">13</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R32" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">14</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R33" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">15</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R34" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">16</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R35" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">17</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R36" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">18</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R37" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">19</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R38" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s8">20</td>
+                <td class="s9" colspan="2"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s9"></td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R39" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s10" colspan="2">Сума без ПДВ</td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R40" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s10" colspan="2">ПДВ</td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R41" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s10" colspan="2">Всього з ПДВ</td>
+                <td class="s8"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R42" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R43" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s11" colspan="3">Всього на суму</td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R44" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2" colspan="7">______________________________________________________________грн________коп
+                </td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R45" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s11" colspan="2">в т.ч. ПДВ</td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R46" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2" colspan="3">__________________________________</td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R47" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R48" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s12" colspan="2">Виписав(ла)</td>
+                <td class="s13" colspan="2">__________________________</td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R49" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 18px">
+                <th id="76577476R50" style="height: 18px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 18px"></div>
+                </th>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+                <td class="s2"></td>
+            </tr>
+            <tr style="height: 19px">
+                <th id="76577476R51" style="height: 19px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 19px"></div>
+                </th>
+                <td class="s14" colspan="7"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script defer="defer">
+    function update(node) {
+        let name = node.value;
+        node.parentNode.innerHTML = name;
+    }
+    function create(node) {
+        console.log(node)
+        if (node.firstChild.nodeType == 3) {
+            let name = node.innerHTML;
+            node.innerHTML = '<input onblur="update(this)" type="input">'
+            node.firstChild.value = name;
+        }
+    }
+</script>

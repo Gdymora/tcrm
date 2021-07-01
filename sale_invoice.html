@@ -1970,17 +1970,19 @@
                 <td class="s34" colspan="16"></td>
                 <td class="s1"></td>
             </tr>
-            <script defer="defer">
-                function update(node) {
-                    let name = node.value;
-                    node.parentNode.innerHTML = name;
-                }
-                function create(node) {
-                    console.log(node)
-                    if (node.firstChild.nodeType == 3) {
-                        let name = node.innerHTML;
-                        node.innerHTML = '<input onblur="update(this)" type="input">'
-                        node.firstChild.value = name;
-                    }
-                }
-            </script>
+    </table>
+</div>
+<script defer="defer">
+    function update(node) {
+        let name = node.value;
+        node.parentNode.innerHTML = name;
+    }
+    function create(node) {
+        console.log(node)
+        if (node.firstChild.nodeType == 3) {
+            let name = node.innerHTML;
+            node.innerHTML = '<input onblur="update(this)" type="input">'
+            node.firstChild.value = name;
+        }
+    }
+</script>
